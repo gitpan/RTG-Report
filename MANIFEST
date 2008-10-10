@@ -16,6 +16,7 @@ META.yml
 README
 rtgreport.conf
 t/is_arrayref.t
+t/pod-coverage.t
 t/pod.t
 t/reporter.t
 t/should_skip.t

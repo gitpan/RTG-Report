@@ -31,6 +31,7 @@ WriteMakefile(
         AUTHOR            => 'Matt Simerson (matt@layeredtech.com)',
         ABSTRACT          => 'RTG Reporting and data processing',
         PL_FILES          => {},
+        LICENSE           => 'perl',
         dist              => { COMPRESS => 'gzip -9f', },
         clean             => {
                                FILES => [  "tmp/*",

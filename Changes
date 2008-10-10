@@ -1,6 +1,17 @@
 
 CHANGES
 
+v1.16  - Oct 10, 2008
+
+ - added pod docs to Report.pm
+ - added t/pod-coverage.t
+ - added license to Makefile.PL (and META.yml)
+
+v1.15  - Oct 08, 2008
+
+ - altered version numbering
+ - released on CPAN
+
 v1.5.0 - Mar 01, 2008
 
  - moved config values into rtgreport.conf

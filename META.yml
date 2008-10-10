@@ -1,10 +1,10 @@
 --- #YAML:1.0
 name:               RTG-Report
-version:            1.15
+version:            1.16
 abstract:           RTG Reporting and data processing
 author:
     - Matt Simerson (matt@layeredtech.com)
-license:            unknown
+license:            perl
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0

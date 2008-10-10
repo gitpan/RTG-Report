@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package RTG::Report;
-our $VERSION = '1.15';
+our $VERSION = '1.16';
 
 # built-in modules
 use English qw( -no_match_vars );
@@ -264,18 +264,58 @@ sub timestamp_sanity {
 1;
 __END__;
 
-
 =head1 NAME
 
 RTG::Report - RTG reporting and data processing utilities
 
 =head1 VERSION
 
-1.15
+1.16
 
 =head1 SYNOPSIS
 
 Functions shared by the RTG::Report utilities.
+
+=head1 FUNCTIONS
+
+=head2 new
+
+instantiate a new RTG::Report object
+
+=head2 formatted_header
+
+generates a CSV file header. The fields are dynamically generated based on the contents of rtgreport.conf.
+
+=head2 get_interface_stats
+
+This is the heart of RTGs data reporting. This function:
+
+ * queries the SQL data store, fetching the interface counters for the selected
+  interface during the specified reporting period. 
+ * sorts the records cronologically
+ * iterates over each record, performing calculations on the raw numbers
+ * finally, calculating the 95th average rates for the period
+ * returns a hashref with bytes transferred, peak rate, average rate, and 95th
+
+=head2 get_the_date
+
+returns an array with year, month, day, hours, min, and seconds as scalars
+
+=head2 is_arrayref
+
+tests is the argument passed in is an arrayref. Returns true or undef.
+
+=head2 should_i_skip_it
+
+Interfaces can be ignored based on their name or description. Great examples of interfaces  you might wan to ignore for reporting purposes would be VLAN or port-channel interfaces. This sub chooses which interfaces to ignore based on your settings in rtgreport.conf. 
+
+=head2 status
+
+prints status functions
+
+=head2 timestamp_sanity
+
+runs a few tests to make sure the data we are processing is consistent.
 
 =head1 AUTHOR
 
