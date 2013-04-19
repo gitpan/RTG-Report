@@ -1,9 +1,9 @@
-#!perl
+package RTG::Report;
+
 use strict;
 use warnings;
 
-package RTG::Report;
-our $VERSION = '1.16';
+our $VERSION = '1.17';
 
 # built-in modules
 use English qw( -no_match_vars );
@@ -319,7 +319,7 @@ runs a few tests to make sure the data we are processing is consistent.
 
 =head1 AUTHOR
 
-Matt Simerson <matt@layeredtech.com>
+Matt Simerson <msimerson@cpan.org>
 
 =head1 LICENSE AND COPYRIGHT
 

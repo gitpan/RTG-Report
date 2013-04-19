@@ -367,7 +367,7 @@ Days controls what data you want to alter. A setting of 190 as shown will only c
 
 =head1 AUTHOR
 
-Matt Simerson <matt@layeredtech.com>
+Matt Simerson <msimerson@cpan.org>
 
 =head1 CHANGES
 

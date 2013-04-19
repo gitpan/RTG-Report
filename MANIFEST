@@ -22,3 +22,4 @@ t/reporter.t
 t/should_skip.t
 t/status.t
 t/timestamp_sanity.t
+META.json                                Module JSON meta-data (added by MakeMaker)

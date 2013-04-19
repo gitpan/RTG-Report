@@ -20,6 +20,7 @@ WriteMakefile(
                               'bin/uplink_summary.pl',
                             ],
         'INSTALLSCRIPT'  => '/usr/local/sbin',
+        'MIN_PERL_VERSION' => 5.008001,
         'PREREQ_PM'      => { 
                         'Date::Calc'        => 5.4, 
                         'DBIx::Simple'      => 1.26, 
@@ -28,7 +29,7 @@ WriteMakefile(
                         'Text::CSV'         => .5,
                         'Config::Std'       => '0.0.4',
                 },
-        AUTHOR            => 'Matt Simerson (matt@layeredtech.com)',
+        AUTHOR            => 'Matt Simerson (msimerson@cpan.org)',
         ABSTRACT          => 'RTG Reporting and data processing',
         PL_FILES          => {},
         LICENSE           => 'perl',

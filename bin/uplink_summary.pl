@@ -593,7 +593,7 @@ Date::Calc, DBIx::Simple, MIME::Lite, Net::SMTP, Config::Std
 
 =head1 AUTHOR
 
-Matt Simerson <matt@layeredtech.com> and Jason Morton <jasonm@layeredtech.com>
+Matt Simerson <msimerson@cpan.org> and Jason Morton <jasonm@layeredtech.com>
 
 
 =head1 LICENSE AND COPYRIGHT

@@ -725,11 +725,12 @@ Done - Abstract many subroutines into a class. Doing so would make it easy to re
 
 =head1 AUTHOR
 
-Matt Simerson <matt@layeredtech.com>
+Matt Simerson <msimerson@cpan.org>
 
 =head1 ACKNOWLEDGEMENTS
 
 Based on report.pl by Rob Beverly and Adam Rothschild.
+
 =head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2008 Layered Technologies, Inc. All rights reserved.

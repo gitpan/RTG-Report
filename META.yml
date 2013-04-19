@@ -1,25 +1,28 @@
---- #YAML:1.0
-name:               RTG-Report
-version:            1.16
-abstract:           RTG Reporting and data processing
+---
+abstract: 'RTG Reporting and data processing'
 author:
-    - Matt Simerson (matt@layeredtech.com)
-license:            perl
-distribution_type:  module
+  - 'Matt Simerson (msimerson@cpan.org)'
+build_requires:
+  ExtUtils::MakeMaker: 0
 configure_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Config::Std:   0.0.4
-    Date::Calc:    5.4
-    DBIx::Simple:  1.26
-    MIME::Lite:    3
-    Net::SMTP:     0.5
-    Text::CSV:     0.5
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.46
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: RTG-Report
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Config::Std: v0.0.4
+  DBIx::Simple: 1.26
+  Date::Calc: 5.4
+  MIME::Lite: 3
+  Net::SMTP: 0.5
+  Text::CSV: 0.5
+  perl: 5.008001
+version: 1.17
